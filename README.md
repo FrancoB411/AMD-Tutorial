@@ -21,7 +21,7 @@ This looks ok, but what if another feature creeps into the application which inv
     
 ### Ensapsulating Your Files' Contents with an Immediately Invoked Function Expression (IIFE)
 
-In the previous section I showed you an example of why exposing your functionality directly to the global scope (which is what happens without taking precautions, even if you separate your JS into multiple files) can come back and bite you in the ass. The next step in the evolution of JavaScript code organization came with using what's known as an [Immediately Invoked Function Expression](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) (or IIFE) to hide your script's function and variable definitions within a closure and to not pollute the global scope.  An example of an IFFE is this:
+In the previous section I showed you an example of why exposing your functionality directly to the global scope (which is what happens without taking precautions, even if you separate your JS into multiple files) can come back and bite you in the ass. The next step in the evolution of JavaScript code organization came with using what's known as an [Immediately Invoked Function Expression](http://benalman.com/news/2010/11/immediately-invoked-function-expression/) (or IIFE) to hide your script's function and variable definitions within a closure and to not pollute the global scope.  An example of an IIFE is this:
 
 ```javascript
 (function(){
